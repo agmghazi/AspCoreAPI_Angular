@@ -1,0 +1,60 @@
+$ dotnet new 
+
+$ dotnet new sln
+
+$ dotnet new webapi -o API
+
+$ dotnet sln -h
+
+$ dotnet sln add API/
+
+$ dotnet sln list
+
+$ dotnet dev-certs https -t
+
+$ dotnet --info
+
+$ dotnet restore   // for check every thing is ok
+
+$ dotnet tool install --global dotnet-ef
+
+$ dotnet ef -h
+
+
+**install entity framework core packadges
+
+-- Microsoft.EntityFrameworkCore                    // for Infrastructure
+-- Microsoft.EntityFrameworkCore.Sqlite           // for Infrastructure
+-- Microsoft.EntityFrameworkCore.Design           //for API project
+
+
+$ dotnet ef migrations add InitialCreate -o Data/Migrations
+$ dotnet ef database update
+
+$ dotnet new classLib -o Core         //to store like Product class
+$ dotnet new classLib -o Infrastructure          //to store like StoreContext
+
+$ dotnet sln add Core
+$ dotnet sln add Infrastructure
+
+$ dotnet sln list
+
+** add refrance project 
+$ cd API/
+$ dotnet add reference ../Infrastructure
+$ dotnet add reference ../Core
+
+$ cd ..
+$ cd Infrastructure/
+$ dotnet add reference ../Core
+
+$ cd ..
+$ dotnet restore
+$ dotnet build
+
+--------------------------------------------------  in master folder (sln)
+$ git status
+$ git init
+$ dotnet new gitignore
+$ git add .
+$ git commit -m "Initial Commit"
