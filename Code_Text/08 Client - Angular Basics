@@ -1,0 +1,3 @@
+$ ng g c  nav-bar --skip-tests
+
+$ ng s -o
