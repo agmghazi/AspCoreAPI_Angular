@@ -1,0 +1,13 @@
+$ ng g m cor
+
+$ ng g m shop
+
+$ ng g m shared
+
+$ cd shop/
+
+$ ng g c shop --flat --skip-tests
+
+$ ng g s shop --skip-tests --flat
+
+$ ng g m  shop-routing  --flat
