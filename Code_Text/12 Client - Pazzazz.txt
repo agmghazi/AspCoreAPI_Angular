@@ -1,0 +1,7 @@
+$ npm install --save xng-breadcrumb
+
+$ npm i bootswatch
+
+$ npm i ngx-spinner
+
+$ ng g s busy --flat --skip-tests
