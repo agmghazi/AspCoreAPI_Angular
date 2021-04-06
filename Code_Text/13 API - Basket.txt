@@ -1,0 +1,3 @@
+--install this packadge
+
+StackExchange.Redis by Stack Exchange, Inc.,marc.gravell
